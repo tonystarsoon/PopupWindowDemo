@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        实现阴影效果的原理是：
+        1. 一层一层的叠加item中的一个shape图形的颜色
+        2. 每一层从外向内的.从底向上叠加,
+        3. 核心就是通过设置上下左右的一定的padding值来将颜色过渡出来,最终呈现的就是阴影效果.
+    -->
+    <!-- Drop Shadow Stack -->
+    <item>
+        <shape>
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="0dp"
+                android:top="0dp"/>
+            <solid android:color="#10CCCCCC"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="0dp"
+                android:top="0dp"/>
+            <solid android:color="#20CCCCCC"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="0dp"
+                android:top="0dp"/>
+            <solid android:color="#40CCCCCC"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="0dp"
+                android:top="0dp"/>
+            <solid android:color="#50CCCCCC"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="0dp"
+                android:top="0dp"/>
+            <solid android:color="#60CCCCCC"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <!-- Background -->
+    <item>
+        <shape>
+            <solid android:color="#FFFFFF"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+</layer-list>
